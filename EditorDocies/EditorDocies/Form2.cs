@@ -13,11 +13,18 @@ namespace EditorDocies
 {
     public partial class Form2 : Form
     {
+
+        static Form1 f = new Form1();
+        static Form3 f3 = new Form3();
+        static Form2 f2 = new Form2();
+        public string nome;
+        public Image img;
         public Form2()
         {
             InitializeComponent();
         }
-        static Form1 f = new Form1();
+        int sopa;
+
         public void Save(string nom)
         {
             Size ss = new Size(400, 1080);
@@ -31,19 +38,36 @@ namespace EditorDocies
 
         private void Form2_Load(object sender, EventArgs e)
         {
-            
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             
-            Save(f.textBox1.Text);
+            Save(nome);
             MessageBox.Show("asdasdad");
         }
 
         private void Form2_FormClosing(object sender, FormClosingEventArgs e)
         {
+            e.Cancel = true;
             this.Hide();
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            img = f3.img;
+            this.BackgroundImage = img;
+            pictureBox1.Image =img;
+            
+            sopa++;
+            lbNome.Text = ""+sopa;
+            lbMes.Text = f3.tst; 
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.BackgroundImage = img;
+            pictureBox1.Image = img;
         }
     }
 }

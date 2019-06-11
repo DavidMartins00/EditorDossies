@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.lbNome = new System.Windows.Forms.Label();
             this.lbAno = new System.Windows.Forms.Label();
             this.lbMes = new System.Windows.Forms.Label();
@@ -36,6 +37,8 @@
             this.lbObs = new System.Windows.Forms.Label();
             this.lbDep = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.button2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -86,7 +89,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox1.Image = global::EditorDocies.Properties.Resources.docie2;
+            this.pictureBox1.Image = global::EditorDocies.Properties.Resources.docie20;
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(321, 1033);
@@ -126,29 +129,45 @@
             this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.ForeColor = System.Drawing.Color.Transparent;
-            this.button1.Location = new System.Drawing.Point(25, 132);
+            this.button1.Location = new System.Drawing.Point(21, 136);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(270, 103);
+            this.button1.Size = new System.Drawing.Size(280, 79);
             this.button1.TabIndex = 8;
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // timer1
+            // 
+            this.timer1.Enabled = true;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(31, 329);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(130, 215);
+            this.button2.TabIndex = 9;
+            this.button2.Text = "button2";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::EditorDocies.Properties.Resources.docie2;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(321, 1033);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.lbNome);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.lbDep);
             this.Controls.Add(this.lbObs);
             this.Controls.Add(this.lbMes);
             this.Controls.Add(this.lbAno);
-            this.Controls.Add(this.lbNome);
             this.Controls.Add(this.lbCd);
             this.Controls.Add(this.pictureBox1);
             this.Name = "Form2";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Form2";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form2_FormClosing);
             this.Load += new System.EventHandler(this.Form2_Load);
@@ -159,7 +178,6 @@
         }
 
         #endregion
-        private System.Windows.Forms.PictureBox pictureBox1;
         public System.Windows.Forms.Label lbNome;
         public System.Windows.Forms.Label lbAno;
         public System.Windows.Forms.Label lbMes;
@@ -167,5 +185,8 @@
         public System.Windows.Forms.Label lbObs;
         public System.Windows.Forms.Label lbDep;
         private System.Windows.Forms.Button button1;
+        public System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Button button2;
     }
 }

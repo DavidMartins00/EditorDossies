@@ -12,7 +12,9 @@ namespace EditorDocies
 {
     public partial class Form1 : Form
     {
-        Form2 f2 = new Form2();
+        static Form2 f2 = new Form2();
+        static Form3 f3 = new Form3();
+        public Image img ;
         public Form1()
         {
             InitializeComponent();
@@ -28,7 +30,7 @@ namespace EditorDocies
             f2.lbCd.Text = txtcd.Text;
             f2.lbObs.Text = txtobs.Text;
             f2.lbDep.Text = txtdep.Text;
-
+            f2.nome = textBox1.Text;
 
         }
 
@@ -51,6 +53,17 @@ namespace EditorDocies
             {
                 textBox1.Text = "Nome do ficheiro";
             }
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            f3.ShowDialog();
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            img = f3.img;
+            pictureBox1.Image = img;
         }
     }
 }

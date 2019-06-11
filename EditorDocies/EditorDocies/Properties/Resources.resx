@@ -121,4 +121,25 @@
   <data name="docie2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\docie2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="docie20" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\docie20.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="docie3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\docie3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="docie4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\docie4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="docie5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\docie5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="docie6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\docie6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="docie7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\docie7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="docie8" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\docie8.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>
