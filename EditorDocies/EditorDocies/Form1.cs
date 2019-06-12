@@ -51,11 +51,6 @@ namespace EditorDocies
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            f2.Save(txtNof.Text);
-        }
-
         private void textBox1_Leave(object sender, EventArgs e)
         {
             if (txtNof.Text == "")
