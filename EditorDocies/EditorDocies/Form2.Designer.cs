@@ -33,12 +33,11 @@
             this.lbAno = new System.Windows.Forms.Label();
             this.lbMes = new System.Windows.Forms.Label();
             this.lbCd = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lbObs = new System.Windows.Forms.Label();
             this.lbDep = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.button2 = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -47,7 +46,7 @@
             this.lbNome.AutoSize = true;
             this.lbNome.BackColor = System.Drawing.Color.Transparent;
             this.lbNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbNome.Location = new System.Drawing.Point(78, 57);
+            this.lbNome.Location = new System.Drawing.Point(83, 57);
             this.lbNome.Name = "lbNome";
             this.lbNome.Size = new System.Drawing.Size(137, 29);
             this.lbNome.TabIndex = 1;
@@ -58,7 +57,7 @@
             this.lbAno.AutoSize = true;
             this.lbAno.BackColor = System.Drawing.Color.Transparent;
             this.lbAno.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbAno.Location = new System.Drawing.Point(131, 237);
+            this.lbAno.Location = new System.Drawing.Point(123, 237);
             this.lbAno.Name = "lbAno";
             this.lbAno.Size = new System.Drawing.Size(55, 29);
             this.lbAno.TabIndex = 2;
@@ -69,7 +68,7 @@
             this.lbMes.AutoSize = true;
             this.lbMes.BackColor = System.Drawing.Color.Transparent;
             this.lbMes.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbMes.Location = new System.Drawing.Point(131, 283);
+            this.lbMes.Location = new System.Drawing.Point(123, 283);
             this.lbMes.Name = "lbMes";
             this.lbMes.Size = new System.Drawing.Size(59, 29);
             this.lbMes.TabIndex = 3;
@@ -85,18 +84,6 @@
             this.lbCd.Size = new System.Drawing.Size(239, 273);
             this.lbCd.TabIndex = 4;
             this.lbCd.Text = "Conteudo do dossie";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox1.Image = global::EditorDocies.Properties.Resources.docie20;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(321, 1033);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 5;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Visible = false;
             // 
             // lbObs
             // 
@@ -114,9 +101,9 @@
             this.lbDep.AutoEllipsis = true;
             this.lbDep.BackColor = System.Drawing.Color.Transparent;
             this.lbDep.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbDep.Location = new System.Drawing.Point(78, 750);
+            this.lbDep.Location = new System.Drawing.Point(42, 750);
             this.lbDep.Name = "lbDep";
-            this.lbDep.Size = new System.Drawing.Size(116, 36);
+            this.lbDep.Size = new System.Drawing.Size(234, 90);
             this.lbDep.TabIndex = 7;
             this.lbDep.Text = "Depart";
             // 
@@ -141,15 +128,17 @@
             this.timer1.Enabled = true;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
-            // button2
+            // pictureBox1
             // 
-            this.button2.Location = new System.Drawing.Point(31, 329);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(130, 215);
-            this.button2.TabIndex = 9;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox1.Image = global::EditorDocies.Properties.Resources.docie20;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(321, 1033);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 5;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Visible = false;
             // 
             // Form2
             // 
@@ -157,7 +146,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(321, 1033);
-            this.Controls.Add(this.button2);
             this.Controls.Add(this.lbNome);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.lbDep);
@@ -167,7 +155,7 @@
             this.Controls.Add(this.lbCd);
             this.Controls.Add(this.pictureBox1);
             this.Name = "Form2";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "Form2";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form2_FormClosing);
             this.Load += new System.EventHandler(this.Form2_Load);
@@ -187,6 +175,5 @@
         private System.Windows.Forms.Button button1;
         public System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Timer timer1;
-        private System.Windows.Forms.Button button2;
     }
 }

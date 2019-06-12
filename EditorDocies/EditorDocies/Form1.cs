@@ -15,6 +15,7 @@ namespace EditorDocies
         static Form2 f2 = new Form2();
         static Form3 f3 = new Form3();
         public Image img ;
+        bool verf;
         public Form1()
         {
             InitializeComponent();
@@ -23,14 +24,30 @@ namespace EditorDocies
 
         private void btSub_Click(object sender, EventArgs e)
         {
-            f2.Show();
-            f2.lbNome.Text = txtNome.Text;
-            f2.lbAno.Text = txtAno.Text;
-            f2.lbMes.Text = txtMes.Text;
-            f2.lbCd.Text = txtcd.Text;
-            f2.lbObs.Text = txtobs.Text;
-            f2.lbDep.Text = txtdep.Text;
-            f2.nome = textBox1.Text;
+            verfa();
+            if (verf == true)
+            {
+                f2.Show();
+                f2.lbNome.Text = txtNome.Text;
+                f2.lbAno.Text = txtAno.Text;
+                f2.lbMes.Text = txtMes.Text;
+                f2.lbCd.Text = txtcd.Text;
+                f2.lbObs.Text = txtobs.Text;
+                f2.lbDep.Text = txtdep.Text;
+                f2.nome = textBox1.Text;
+                if (txtMes.Text == "Creditos")
+                {
+                    Cls cls = new Cls();
+                    cls.ShowDialog();
+                }
+                MessageBox.Show("Para guardar o ficheiro basta carregar no logo do Cecilio");
+            }
+            else
+            {
+                MessageBox.Show("Preencha todos os campos");
+            }
+
+            
 
         }
 
@@ -64,6 +81,29 @@ namespace EditorDocies
         {
             img = f3.img;
             pictureBox1.Image = img;
+        }
+
+        private void verfa()
+        {
+            int num = 0;
+            foreach (Control verftxt in this.Controls)
+            {
+
+                if (verftxt is TextBox)
+                {
+                    if (((TextBox)verftxt).Text != "")
+                    {
+                        num++;
+                        if (num == 7)
+                        {
+                            verf = true;
+                        }
+                        else { verf = false; }
+                    }
+
+
+                }
+            }
         }
     }
 }

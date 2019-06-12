@@ -16,7 +16,6 @@ namespace EditorDocies
 
         static Form1 f = new Form1();
         static Form3 f3 = new Form3();
-        static Form2 f2 = new Form2();
         public string nome;
         public Image img;
         public Form2()
@@ -28,7 +27,7 @@ namespace EditorDocies
         public void Save(string nom)
         {
             Size ss = new Size(400, 1080);
-            Bitmap bitmap = new Bitmap(315,900);
+            Bitmap bitmap = new Bitmap(310,900);
             Graphics graphics = Graphics.FromImage(bitmap);
             
             Rectangle rect = this.RectangleToScreen(this.ClientRectangle);
@@ -41,10 +40,8 @@ namespace EditorDocies
         }
 
         private void button1_Click(object sender, EventArgs e)
-        {
-            
+        {      
             Save(nome);
-            MessageBox.Show("asdasdad");
         }
 
         private void Form2_FormClosing(object sender, FormClosingEventArgs e)
@@ -55,19 +52,9 @@ namespace EditorDocies
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            img = f3.img;
+            img = f.pictureBox1.Image;
             this.BackgroundImage = img;
             pictureBox1.Image =img;
-            
-            sopa++;
-            lbNome.Text = ""+sopa;
-            lbMes.Text = f3.tst; 
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            this.BackgroundImage = img;
-            pictureBox1.Image = img;
         }
     }
 }
