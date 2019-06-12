@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.label1 = new System.Windows.Forms.Label();
             this.txtNome = new System.Windows.Forms.TextBox();
             this.txtAno = new System.Windows.Forms.TextBox();
@@ -42,7 +43,7 @@
             this.txtdep = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.btSub = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtNof = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label7 = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
@@ -70,7 +71,7 @@
             this.txtAno.Location = new System.Drawing.Point(118, 51);
             this.txtAno.Name = "txtAno";
             this.txtAno.Size = new System.Drawing.Size(126, 22);
-            this.txtAno.TabIndex = 3;
+            this.txtAno.TabIndex = 2;
             // 
             // label2
             // 
@@ -86,7 +87,7 @@
             this.txtMes.Location = new System.Drawing.Point(118, 91);
             this.txtMes.Name = "txtMes";
             this.txtMes.Size = new System.Drawing.Size(126, 22);
-            this.txtMes.TabIndex = 5;
+            this.txtMes.TabIndex = 3;
             // 
             // label3
             // 
@@ -103,7 +104,7 @@
             this.txtcd.Multiline = true;
             this.txtcd.Name = "txtcd";
             this.txtcd.Size = new System.Drawing.Size(206, 88);
-            this.txtcd.TabIndex = 7;
+            this.txtcd.TabIndex = 5;
             // 
             // label4
             // 
@@ -119,7 +120,7 @@
             this.txtobs.Multiline = true;
             this.txtobs.Name = "txtobs";
             this.txtobs.Size = new System.Drawing.Size(206, 66);
-            this.txtobs.TabIndex = 9;
+            this.txtobs.TabIndex = 6;
             // 
             // label5
             // 
@@ -134,7 +135,7 @@
             this.txtdep.Location = new System.Drawing.Point(118, 129);
             this.txtdep.Name = "txtdep";
             this.txtdep.Size = new System.Drawing.Size(126, 22);
-            this.txtdep.TabIndex = 11;
+            this.txtdep.TabIndex = 4;
             // 
             // label6
             // 
@@ -150,20 +151,21 @@
             this.btSub.Location = new System.Drawing.Point(52, 457);
             this.btSub.Name = "btSub";
             this.btSub.Size = new System.Drawing.Size(139, 50);
-            this.btSub.TabIndex = 12;
+            this.btSub.TabIndex = 8;
             this.btSub.Text = "Submeter";
             this.btSub.UseVisualStyleBackColor = true;
             this.btSub.Click += new System.EventHandler(this.btSub_Click);
             // 
-            // textBox1
+            // txtNof
             // 
-            this.textBox1.Location = new System.Drawing.Point(52, 429);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(139, 22);
-            this.textBox1.TabIndex = 15;
-            this.textBox1.Text = "Nome do ficheiro";
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
-            this.textBox1.Leave += new System.EventHandler(this.textBox1_Leave);
+            this.txtNof.Location = new System.Drawing.Point(52, 429);
+            this.txtNof.Name = "txtNof";
+            this.txtNof.Size = new System.Drawing.Size(139, 22);
+            this.txtNof.TabIndex = 7;
+            this.txtNof.Text = "Nome do ficheiro";
+            this.txtNof.Click += new System.EventHandler(this.txtNof_Click);
+            this.txtNof.TextChanged += new System.EventHandler(this.txtNof_TextChanged);
+            this.txtNof.Leave += new System.EventHandler(this.textBox1_Leave);
             // 
             // pictureBox1
             // 
@@ -196,7 +198,7 @@
             this.ClientSize = new System.Drawing.Size(374, 519);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtNof);
             this.Controls.Add(this.btSub);
             this.Controls.Add(this.txtdep);
             this.Controls.Add(this.label6);
@@ -210,8 +212,9 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtNome);
             this.Controls.Add(this.label1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Editor Dossies";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -233,7 +236,7 @@
         public System.Windows.Forms.TextBox txtcd;
         public System.Windows.Forms.TextBox txtobs;
         public System.Windows.Forms.TextBox txtdep;
-        public System.Windows.Forms.TextBox textBox1;
+        public System.Windows.Forms.TextBox txtNof;
         private System.Windows.Forms.Label label7;
         public System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Timer timer1;

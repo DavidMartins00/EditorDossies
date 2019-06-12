@@ -34,7 +34,7 @@ namespace EditorDocies
                 f2.lbCd.Text = txtcd.Text;
                 f2.lbObs.Text = txtobs.Text;
                 f2.lbDep.Text = txtdep.Text;
-                f2.nome = textBox1.Text;
+                f2.nome = txtNof.Text;
                 if (txtMes.Text == "Creditos")
                 {
                     Cls cls = new Cls();
@@ -53,22 +53,14 @@ namespace EditorDocies
 
         private void button1_Click(object sender, EventArgs e)
         {
-            f2.Save(textBox1.Text);
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-            if (textBox1.Text == "Nome do ficheiro")
-            {
-                textBox1.ResetText();
-            }
+            f2.Save(txtNof.Text);
         }
 
         private void textBox1_Leave(object sender, EventArgs e)
         {
-            if (textBox1.Text == "")
+            if (txtNof.Text == "")
             {
-                textBox1.Text = "Nome do ficheiro";
+                txtNof.Text = "Nome do ficheiro";
             }
         }
 
@@ -94,7 +86,7 @@ namespace EditorDocies
                     if (((TextBox)verftxt).Text != "")
                     {
                         num++;
-                        if (num == 7)
+                        if (num == 7 && txtNof.Text != "Nome do ficheiro")
                         {
                             verf = true;
                         }
@@ -104,6 +96,19 @@ namespace EditorDocies
 
                 }
             }
+        }
+
+        private void txtNof_Click(object sender, EventArgs e)
+        {
+            if (txtNof.Text == "Nome do ficheiro")
+            {
+                txtNof.ResetText();
+            }
+        }
+
+        private void txtNof_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

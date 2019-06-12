@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
             this.lbNome = new System.Windows.Forms.Label();
             this.lbAno = new System.Windows.Forms.Label();
             this.lbMes = new System.Windows.Forms.Label();
@@ -38,6 +39,7 @@
             this.button1 = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.button2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -46,7 +48,7 @@
             this.lbNome.AutoSize = true;
             this.lbNome.BackColor = System.Drawing.Color.Transparent;
             this.lbNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbNome.Location = new System.Drawing.Point(83, 57);
+            this.lbNome.Location = new System.Drawing.Point(83, 63);
             this.lbNome.Name = "lbNome";
             this.lbNome.Size = new System.Drawing.Size(137, 29);
             this.lbNome.TabIndex = 1;
@@ -57,7 +59,7 @@
             this.lbAno.AutoSize = true;
             this.lbAno.BackColor = System.Drawing.Color.Transparent;
             this.lbAno.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbAno.Location = new System.Drawing.Point(123, 237);
+            this.lbAno.Location = new System.Drawing.Point(123, 251);
             this.lbAno.Name = "lbAno";
             this.lbAno.Size = new System.Drawing.Size(55, 29);
             this.lbAno.TabIndex = 2;
@@ -68,7 +70,7 @@
             this.lbMes.AutoSize = true;
             this.lbMes.BackColor = System.Drawing.Color.Transparent;
             this.lbMes.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbMes.Location = new System.Drawing.Point(123, 283);
+            this.lbMes.Location = new System.Drawing.Point(117, 305);
             this.lbMes.Name = "lbMes";
             this.lbMes.Size = new System.Drawing.Size(59, 29);
             this.lbMes.TabIndex = 3;
@@ -79,7 +81,7 @@
             this.lbCd.AutoEllipsis = true;
             this.lbCd.BackColor = System.Drawing.Color.Transparent;
             this.lbCd.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbCd.Location = new System.Drawing.Point(37, 357);
+            this.lbCd.Location = new System.Drawing.Point(37, 371);
             this.lbCd.Name = "lbCd";
             this.lbCd.Size = new System.Drawing.Size(239, 273);
             this.lbCd.TabIndex = 4;
@@ -89,8 +91,9 @@
             // 
             this.lbObs.AutoEllipsis = true;
             this.lbObs.BackColor = System.Drawing.Color.Transparent;
+            this.lbObs.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lbObs.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbObs.Location = new System.Drawing.Point(37, 649);
+            this.lbObs.Location = new System.Drawing.Point(37, 671);
             this.lbObs.Name = "lbObs";
             this.lbObs.Size = new System.Drawing.Size(199, 52);
             this.lbObs.TabIndex = 6;
@@ -101,9 +104,9 @@
             this.lbDep.AutoEllipsis = true;
             this.lbDep.BackColor = System.Drawing.Color.Transparent;
             this.lbDep.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbDep.Location = new System.Drawing.Point(42, 750);
+            this.lbDep.Location = new System.Drawing.Point(38, 755);
             this.lbDep.Name = "lbDep";
-            this.lbDep.Size = new System.Drawing.Size(234, 90);
+            this.lbDep.Size = new System.Drawing.Size(243, 90);
             this.lbDep.TabIndex = 7;
             this.lbDep.Text = "Depart";
             // 
@@ -116,7 +119,7 @@
             this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.ForeColor = System.Drawing.Color.Transparent;
-            this.button1.Location = new System.Drawing.Point(21, 136);
+            this.button1.Location = new System.Drawing.Point(21, 145);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(280, 79);
             this.button1.TabIndex = 8;
@@ -140,12 +143,27 @@
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Visible = false;
             // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.IndianRed;
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Location = new System.Drawing.Point(283, -2);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(41, 25);
+            this.button2.TabIndex = 9;
+            this.button2.Text = "X";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(321, 1033);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.lbNome);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.lbDep);
@@ -154,9 +172,11 @@
             this.Controls.Add(this.lbAno);
             this.Controls.Add(this.lbCd);
             this.Controls.Add(this.pictureBox1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form2";
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
-            this.Text = "Form2";
+            this.Text = "Editor Dossies";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form2_FormClosing);
             this.Load += new System.EventHandler(this.Form2_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -175,5 +195,6 @@
         private System.Windows.Forms.Button button1;
         public System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Button button2;
     }
 }

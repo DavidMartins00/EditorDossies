@@ -26,13 +26,15 @@ namespace EditorDocies
 
         public void Save(string nom)
         {
+            button1.Visible = false;
             Size ss = new Size(400, 1080);
-            Bitmap bitmap = new Bitmap(310,900);
+            Bitmap bitmap = new Bitmap(300,900);
             Graphics graphics = Graphics.FromImage(bitmap);
             
             Rectangle rect = this.RectangleToScreen(this.ClientRectangle);
             graphics.CopyFromScreen(this.Location,Point.Empty, ss);
             bitmap.Save(nom + ".png");
+            button1.Visible = true;
         }
 
         private void Form2_Load(object sender, EventArgs e)
@@ -40,8 +42,11 @@ namespace EditorDocies
         }
 
         private void button1_Click(object sender, EventArgs e)
-        {      
+        {
+            button2.Visible = false;
             Save(nome);
+            button2.Visible = true;
+
         }
 
         private void Form2_FormClosing(object sender, FormClosingEventArgs e)
@@ -55,6 +60,12 @@ namespace EditorDocies
             img = f.pictureBox1.Image;
             this.BackgroundImage = img;
             pictureBox1.Image =img;
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            //this.Hide();
+            Application.Exit();
         }
     }
 }
