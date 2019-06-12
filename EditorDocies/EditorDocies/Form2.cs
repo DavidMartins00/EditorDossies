@@ -18,12 +18,11 @@ namespace EditorDocies
         static Form3 f3 = new Form3();
         public string nome;
         public Image img;
+        string path = Application.ExecutablePath;
         public Form2()
         {
             InitializeComponent();
         }
-        int sopa;
-
         public void Save(string nom)
         {
             button1.Visible = false;
@@ -33,7 +32,9 @@ namespace EditorDocies
             
             Rectangle rect = this.RectangleToScreen(this.ClientRectangle);
             graphics.CopyFromScreen(this.Location,Point.Empty, ss);
-            bitmap.Save(nom + ".png");
+            
+            bitmap.Save(path+nome+".png");
+
             button1.Visible = true;
         }
 
@@ -64,8 +65,7 @@ namespace EditorDocies
 
         private void button2_Click(object sender, EventArgs e)
         {
-            //this.Hide();
-            Application.Exit();
+            this.Hide();
         }
     }
 }
