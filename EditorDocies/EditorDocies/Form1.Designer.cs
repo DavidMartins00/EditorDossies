@@ -164,7 +164,6 @@
             this.txtNof.TabIndex = 7;
             this.txtNof.Text = "Nome do ficheiro";
             this.txtNof.Click += new System.EventHandler(this.txtNof_Click);
-            this.txtNof.TextChanged += new System.EventHandler(this.txtNof_TextChanged);
             this.txtNof.Leave += new System.EventHandler(this.textBox1_Leave);
             // 
             // pictureBox1

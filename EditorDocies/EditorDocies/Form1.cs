@@ -16,6 +16,7 @@ namespace EditorDocies
         static Form3 f3 = new Form3();
         public Image img ;
         bool verf;
+
         public Form1()
         {
             InitializeComponent();
@@ -24,6 +25,12 @@ namespace EditorDocies
 
         private void btSub_Click(object sender, EventArgs e)
         {
+            if (txtMes.Text == "Creditos")
+            {
+                Cls cls = new Cls();
+                cls.ShowDialog();
+            }
+
             verfa();
             if (verf == true)
             {
@@ -35,20 +42,11 @@ namespace EditorDocies
                 f2.lbObs.Text = txtobs.Text;
                 f2.lbDep.Text = txtdep.Text;
                 f2.nome = txtNof.Text;
-                if (txtMes.Text == "Creditos")
-                {
-                    Cls cls = new Cls();
-                    cls.ShowDialog();
-                }
-                MessageBox.Show("Para guardar o ficheiro basta carregar no logo do Cecilio");
             }
             else
             {
                 MessageBox.Show("Preencha todos os campos");
             }
-
-            
-
         }
 
         private void textBox1_Leave(object sender, EventArgs e)
@@ -87,8 +85,6 @@ namespace EditorDocies
                         }
                         else { verf = false; }
                     }
-
-
                 }
             }
         }
@@ -99,11 +95,6 @@ namespace EditorDocies
             {
                 txtNof.ResetText();
             }
-        }
-
-        private void txtNof_TextChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }

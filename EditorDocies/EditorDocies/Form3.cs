@@ -15,11 +15,11 @@ namespace EditorDocies
         Form1 f1 = new Form1();
         Form2 f2 = new Form2();
         public Image img = Properties.Resources.docie20;
+
         public Form3()
         {
             InitializeComponent();
-        }
-        
+        }  
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
