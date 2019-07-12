@@ -43,7 +43,6 @@
             this.txtdep = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.btSub = new System.Windows.Forms.Button();
-            this.txtNof = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label7 = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
@@ -148,23 +147,13 @@
             // 
             // btSub
             // 
-            this.btSub.Location = new System.Drawing.Point(52, 457);
+            this.btSub.Location = new System.Drawing.Point(103, 461);
             this.btSub.Name = "btSub";
-            this.btSub.Size = new System.Drawing.Size(139, 50);
+            this.btSub.Size = new System.Drawing.Size(141, 46);
             this.btSub.TabIndex = 8;
             this.btSub.Text = "Submeter";
             this.btSub.UseVisualStyleBackColor = true;
             this.btSub.Click += new System.EventHandler(this.btSub_Click);
-            // 
-            // txtNof
-            // 
-            this.txtNof.Location = new System.Drawing.Point(52, 429);
-            this.txtNof.Name = "txtNof";
-            this.txtNof.Size = new System.Drawing.Size(139, 22);
-            this.txtNof.TabIndex = 7;
-            this.txtNof.Text = "Nome do ficheiro";
-            this.txtNof.Click += new System.EventHandler(this.txtNof_Click);
-            this.txtNof.Leave += new System.EventHandler(this.textBox1_Leave);
             // 
             // pictureBox1
             // 
@@ -197,7 +186,6 @@
             this.ClientSize = new System.Drawing.Size(374, 519);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.txtNof);
             this.Controls.Add(this.btSub);
             this.Controls.Add(this.txtdep);
             this.Controls.Add(this.label6);
@@ -237,7 +225,6 @@
         public System.Windows.Forms.TextBox txtcd;
         public System.Windows.Forms.TextBox txtobs;
         public System.Windows.Forms.TextBox txtdep;
-        public System.Windows.Forms.TextBox txtNof;
         private System.Windows.Forms.Label label7;
         public System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Timer timer1;

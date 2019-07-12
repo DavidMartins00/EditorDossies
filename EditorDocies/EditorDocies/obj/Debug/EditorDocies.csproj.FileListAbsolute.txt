@@ -1,0 +1,13 @@
+C:\Users\dasma\Desktop\EditorDocies\EditorDocies\bin\Debug\EditorDocies.exe.config
+C:\Users\dasma\Desktop\EditorDocies\EditorDocies\bin\Debug\EditorDocies.exe
+C:\Users\dasma\Desktop\EditorDocies\EditorDocies\bin\Debug\EditorDocies.pdb
+C:\Users\dasma\Desktop\EditorDocies\EditorDocies\obj\Debug\EditorDocies.csprojAssemblyReference.cache
+C:\Users\dasma\Desktop\EditorDocies\EditorDocies\obj\Debug\EditorDocies.Cls.resources
+C:\Users\dasma\Desktop\EditorDocies\EditorDocies\obj\Debug\EditorDocies.Form1.resources
+C:\Users\dasma\Desktop\EditorDocies\EditorDocies\obj\Debug\EditorDocies.Form2.resources
+C:\Users\dasma\Desktop\EditorDocies\EditorDocies\obj\Debug\EditorDocies.Form3.resources
+C:\Users\dasma\Desktop\EditorDocies\EditorDocies\obj\Debug\EditorDocies.Properties.Resources.resources
+C:\Users\dasma\Desktop\EditorDocies\EditorDocies\obj\Debug\EditorDocies.csproj.GenerateResource.cache
+C:\Users\dasma\Desktop\EditorDocies\EditorDocies\obj\Debug\EditorDocies.csproj.CoreCompileInputs.cache
+C:\Users\dasma\Desktop\EditorDocies\EditorDocies\obj\Debug\EditorDocies.exe
+C:\Users\dasma\Desktop\EditorDocies\EditorDocies\obj\Debug\EditorDocies.pdb

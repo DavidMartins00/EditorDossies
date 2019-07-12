@@ -41,19 +41,10 @@ namespace EditorDocies
                 f2.lbCd.Text = txtcd.Text;
                 f2.lbObs.Text = txtobs.Text;
                 f2.lbDep.Text = txtdep.Text;
-                f2.nome = txtNof.Text;
             }
             else
             {
                 MessageBox.Show("Preencha todos os campos");
-            }
-        }
-
-        private void textBox1_Leave(object sender, EventArgs e)
-        {
-            if (txtNof.Text == "")
-            {
-                txtNof.Text = "Nome do ficheiro";
             }
         }
 
@@ -79,21 +70,13 @@ namespace EditorDocies
                     if (((TextBox)verftxt).Text != "")
                     {
                         num++;
-                        if (num == 7 && txtNof.Text != "Nome do ficheiro")
+                        if (num == 6 )
                         {
                             verf = true;
                         }
                         else { verf = false; }
                     }
                 }
-            }
-        }
-
-        private void txtNof_Click(object sender, EventArgs e)
-        {
-            if (txtNof.Text == "Nome do ficheiro")
-            {
-                txtNof.ResetText();
             }
         }
     }
